@@ -29,97 +29,13 @@
 #   koniec glownej petli
 
 
-# import random
-
-# # Dostajemy z banku na start 5000 kredytów
-# kredyt = 5000
-
-# # japońskie cyfry
-# JAPONSKIE_CYFRY = {1: "ichi", 2: "ni", 3: "san", 4: "shi", 5: "go", 6: "roku"}
-# # WHILE
-# while True:
-
-#     # inforujemy gracza ile ma kredytów
-#     print("Masz", kredyt, "kredytów", "Ile chcesz postawić?")
-#     # stawianie pieniędz
-#     while True:
-#         stawka = int(input())
-#         if stawka > kredyt:
-#             # musimy sprawdzić czy gracz nie postawil wiecej niż posiada
-#             print("Nie masz tyle kredytów")
-#         # elif not stawka.isdecimal():
-#         #     print("To nie jest liczba")
-#         else:
-#             stawka = int(stawka)
-#             break
-
-#     # Gracz wybiera czy parzyste czy nieparzyste
-#     print("Wybierz parzyste czy nieparzyste")
-#     while True:
-#         wybor = input()
-#         if wybor == "parzyste" or wybor == "nieparzyste":
-#             break
-#         else:
-#             print("Nieprawidłowy wybór")
-#     # losowanie wartości kości
-#     kostka1 = random.randint(1, 6)
-#     kostka2 = random.randint(1, 6)
-#     # Wyświetlamy kości
-#     print("Wyrzuciłeś", JAPONSKIE_CYFRY[kostka1], "i", JAPONSKIE_CYFRY[kostka2])
-#     print("Suma to", kostka1 + kostka2)
-#     # sprawdzamy czy wygrał
-#     czyParzyste = (kostka1 + kostka2) % 2 == 0
-#     if czyParzyste:
-#         wygrywa = "parzyste"
-#     else:
-#         wygrywa = "nieparzyste"
-#     # Jeżeli wygrał to
-#     if wygrywa == wybor:
-#         print("Wygrałeś")
-#         # Wygrywa ilość o którą się założył pomniejszoną o 10%
-#         kredyt += stawka - int(0.1 * stawka)
-#         print("Masz", kredyt, "kredytów")
-#         if kredyt >= 20000:
-#             # sprawdzamy czy przekroczył 20000
-#             # jeżeli tak to wyświetlamy gratulacje
-#             print("Gratulacje wygrałeś")
-#             break
-#     else:
-#         # Jeżeli przegra to traci kredyty o które sie założył
-#         kredyt = kredyt - stawka
-#         print("Przegrałeś")
-
-#         if kredyt <= 0:
-#             # sprawdzamy czy ma kredyty w portfelu - jeżeli nie ma kończymy grę
-#             print("Przegrałeś, nie masz kredytów")
-#             print("dziękujemy za gre!")
-#             exit()
-#             break
-#     print("Czy chcesz grać dalej? (t/n)")
-#     # sprawdzamy czy chce grać dalej
-#     while True:
-#         czyGrać = input()
-#         if czyGrać == "t":
-#             break
-#         elif czyGrać == "n":
-#             print("Dziękujemy za grę")
-#             exit()
-#         else:
-#             print("Nieprawidłowy wybór")
-#     # jeżeli ma moze grać dalej
-#     # koniec głównej pętli
-
 import random
 import funkcje as f
 
-# Dostajemy z banku na start 5000 kredytów
 kredyt = 5000
 
-# japońskie cyfry
 JAPONSKIE_CYFRY = {1: "ichi", 2: "ni", 3: "san", 4: "shi", 5: "go", 6: "roku"}
 
-
-# WHILE
 
 while True:
 

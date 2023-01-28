@@ -1,10 +1,10 @@
-from os import system
+# from os import system  #add if using linux
 import random
 from time import sleep
 
 
 def wydruk(zmienna):
-    system("cls")
+    # system("cls")  #uncheck if using linux
     print("#####################CHO-HAN#####################")
     print(str(zmienna))
     print("################################################")
